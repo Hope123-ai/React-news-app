@@ -28,11 +28,112 @@
   color: #61dafb;
 }
 
+.title{
+  color: blue;
+  font-family: 'Roboto';
+}
+
+.input{
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 70%;
+  margin: 1rem;
+}
+
+.search_btn{
+  margin: 1rem;
+  border: none;
+  outline: none;
+  height: 15px;
+  width: 15px;
+  background-color: lavender;
+  padding: 0.90rem;
+  color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0 #282c34;
+}
+
+.date{
+  margin: 0.5rem;
+  /* font-style: italic; */
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 253);
+}
+
+.search-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline:hover{
+  box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #808080;
+}
+
+.headline{
+  background-color: white;
+  padding: 1rem;
+  color: black;
+  margin: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.news{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+
+}
+
+.desc{
+  font-size: 16px;
+  padding: 0.25rem;
+}
+
+.poster{
+  height: 5rem;
+  width: 6rem;
+  margin: 1rem;
+  margin-top: 0;
+  border: 0.75px solid lavender;
+  border-radius: 7px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: row;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:768px){
+  .poster{
+  width: 100%;
+  margin: 1rem;
+  margin-left: 0;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
   }
 }
